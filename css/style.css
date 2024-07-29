@@ -1,9 +1,18 @@
 body {
     color: #000000;
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .header-title {
     color: #005FA3;
+    font-family: 'Merriweather';
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 50px;
 }
 
 .header_contact-link{
@@ -12,12 +21,18 @@ body {
 
 .header-contact-text {
     color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
 }
 
 .header-nav-link {
     text-decoration: none;
     color: #222222;
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
 }
 
 .desc {
@@ -27,11 +42,30 @@ body {
 
 .desc-link {
     text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34.5px;
+
+
 }
 
-.desc-title,
+.desc-title {
+    color: #FFFFFF;
+    font-family: "Merriweather";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 66px;
+    
+
+}
+
 .desc-link {
     color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+
 }
 
 .service {
@@ -41,15 +75,26 @@ body {
 
 .section-title {
     color: #BDBDBD;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 33px;
 }
 
 .section-subtitle {
     color: #333333;
+    font-family: "Merriweather";
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+    
 }
 
 .service-item-title-text {
     color: #FFFFFF;
-    
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+
 }
 
 .service-item-title {
@@ -74,7 +119,7 @@ body {
 }
 
 .about-item {
-    background-color: #EBEBEB 0;
+    background-color: #EBEBEB;
 }
 
 .about-item-text-0 {
@@ -88,4 +133,37 @@ body {
 
 .about-item-text-2 {
     color: #005FA3;
+}
+
+.Our-partners-bkg {
+    background-color: #EBEBEB;
+}
+
+.reviews {
+    background-color: white;
+}
+
+.reviews-item {
+    background-color: #EBEBEB;
+}
+
+.reviews-item-blockquote {
+    color: #000;
+}
+
+.reviews-item-img {
+
+}
+
+.reviews-item-author {
+    color: #000;
+}
+
+.reviews-item-author-position {
+    color: #4F4F4F;
+}
+
+.reviews-button {
+    color: white;
+    background-color: #005FA3;
 }
