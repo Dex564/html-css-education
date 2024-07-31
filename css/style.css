@@ -45,7 +45,7 @@ body {
     font-size: 25px;
     font-weight: 400;
     line-height: 34.5px;
-
+    background: #005FA3;
 
 }
 
@@ -65,7 +65,7 @@ body {
     font-weight: 400;
     line-height: 35px;
     text-align: center;
-
+    border: none;
 }
 
 .service {
@@ -110,6 +110,7 @@ body {
     color: #333333;
     font-family: "Merriweather";
     font-size: 48px;
+    font-weight: 900;
     line-height: 69px;
 }
 
@@ -117,6 +118,7 @@ body {
     color: #005FA3;
     font-family: "Merriweather";
     font-size: 48px;
+    font-weight: 900;
     line-height: 69px;
 }
 
@@ -134,6 +136,7 @@ body {
     color: #000000;
     text-transform: uppercase;
     font-size: 55px;
+    font-weight: 900;
     line-height: 66px;
     letter-spacing: 0.1em;
     
@@ -144,12 +147,14 @@ body {
     color: #000000;
     font-size: 14px;
     line-height: 18px;
+    font-weight: 700;
 }
 
-.about-item-text-2 {
+.about-item-link {
     color: #005FA3;
     font-size: 14px;
     line-height: 17px;
+    font-weight: 700;
 }
 
 .Our-partners-bkg {
@@ -186,6 +191,7 @@ body {
     color: #4F4F4F;
     font-size: 14px;
     line-height: 19px;
+    font-weight: 400;
 }
 
 .reviews-button {
@@ -195,6 +201,7 @@ body {
     font-weight: 400;
     line-height: 25px;
     text-align: center;
+    border: none;
 }
 
 .our-advantages {
@@ -226,6 +233,7 @@ body {
 
 .footer-main-section {
     background-image: url(../img/first-screen-bkg.png);
+    color: #FFF;
 }
 
 .footer-title {
