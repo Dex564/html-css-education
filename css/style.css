@@ -7,6 +7,15 @@ body {
     line-height: 25px;
 }
 
+.container {
+    width: 1115px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 23 0 31;
+}
+
 .header-title {
     color: #005FA3;
     font-family: 'Merriweather';
@@ -36,17 +45,23 @@ body {
 }
 
 .desc {
+    padding: 170px 0;
     background-color: #00000099;
     background-image: url(../img/first-screen-bkg.png);
 }
 
 .desc-link {
     text-decoration: none;
+    color: #FFFFFF;
     font-size: 25px;
     font-weight: 400;
-    line-height: 34.5px;
+    line-height: 34px;
     background: #005FA3;
-
+    border: none;
+    width: 333px;
+    min-height: 84px;
+    display: block;
+    text-align: center;
 }
 
 .desc-title {
@@ -55,17 +70,9 @@ body {
     font-size: 48px;
     font-weight: 700;
     line-height: 66px;
+    margin: 0 0 131px;
     
 
-}
-
-.desc-link {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 35px;
-    text-align: center;
-    border: none;
 }
 
 .service {
