@@ -190,18 +190,24 @@
             <div class="container">
                 <h2 class="section-title advantages-title">Наши преимущетсва</h2>
                 <p class="section-subtitle advantages-subtitle">Мы предлагаем</p>
-                <ul>
-                    <li>
-                        <img src="./img/quality-medal.svg" alt="quality-medal">
-                        <p class="our-advantages-item-quality">Качество</p>
+                <ul class="our-advantages-items">
+                    <li class="our-advantages-item">
+                        <div class="our-advantages-flex">
+                            <img src="./img/quality-medal.svg" alt="quality-medal">
+                            <p class="our-advantages-item-quality">Качество</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/running-man.svg" alt="running-man">
-                        <p class="our-advantages-item-running-man">Оперативность</p>
+                    <li class="our-advantages-item">
+                        <div class="our-advantages-flex">
+                            <img src="./img/running-man.svg" alt="running-man">
+                            <p class="our-advantages-item-running-man">Оперативность</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./img/mechanic.svg" alt="mechanic">
-                        <p class="our-advantages-item-mechanic">Экспертность</p>
+                    <li class="our-advantages-item">
+                        <div class="our-advantages-flex">
+                            <img src="./img/mechanic.svg" alt="mechanic">
+                            <p class="our-advantages-item-mechanic">Экспертность</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -212,14 +218,17 @@
     <footer class="footer">
         <div class="footer-main-section">
             <div class="container">
-                <div class="footer-wrp">
-                    <h2 class="footer-title">Связь с нами</h2>
-                    <p class="footer-subtitle">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
-                    <ul class="footer-list">
-                        <li class="phone_footer"><img src="./img/phone_footer.svg" alt="phone_footer" class="phone_footer-img"><a class="footer-item-phone" href="tel:81112223344">+7 (111) 222-33-44</a></li>
-                        <li class="envelope"><img src="./img/envelope.svg" alt="envelope"><a class="footer-item-mail" href="mailto:order@buhone.ru">order@bu-one.ru</a></li>
-                    </ul>
-                    <div>
+                <div class="footer-wrp flex">
+                    <div class='half-width'>
+                        <h2 class="footer-title">Связь с нами</h2>
+                        <p class="footer-subtitle">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+                        <ul class="footer-list flex">
+                            <li class="phone-footer flex"><img src="./img/phone_footer.svg" alt="phone_footer" class="phone-footer-img"><a class="footer-item-phone" href="tel:81112223344">+7 (111) 222-33-44</a></li>
+                            <li class="envelope flex"><img src="./img/envelope.svg" alt="envelope" class="footer-item-mail-img"><a class="footer-item-mail" href="mailto:order@buhone.ru">order@bu-one.ru</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="half-width wrp-padding">
                         Форма
                         <button type="button" class="footer-button">Отправить сообщение</button>
                     </div>
@@ -230,7 +239,7 @@
 
         <div class="container">    
             <div class="footer-end-section">
-                <ul class="footer-end-list">
+                <ul class="footer-end-list flex">
                     <li><p class="footer-end-1">2019 (с) Все права защищены. БухОне.ру</p></li>
                     <li><p class="footer-end-2">Разработано: BuhOne</p></li>
                 </ul>
