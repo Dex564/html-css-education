@@ -454,6 +454,53 @@ body {
     line-height: 29px;
 }
 
+.form-contact-wrp {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 35px;
+}
+
+.input-label-span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+    margin: 0 0 15px;
+}
+
+.input-label {
+    margin: 0 0 35px 0;
+}
+
+.input-label-input {
+    width: 255px;
+    padding: 4px 0 15px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: 300px;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFF;
+}
+
+.input-label-textarea {
+    padding: 4px 0 15px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    width: 100%;
+    min-height: 105px;
+    resize: none;
+    margin: 0 0 50px;
+    font-family: inherit;
+    font-weight: 300px;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFF;
+}
+
 .footer-button {
     width: 270px;
     min-height: 60px;
