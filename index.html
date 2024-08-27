@@ -17,55 +17,60 @@
 
 <body>
     <header class="header container">
-        <img class="header-img" src="./img/logo.svg" alt="logo">
-        <p class="header-title">BuhOne</p>
-        <ul>
-            <li>
-                <a class="header_contact-link" href="tel:81112223344">
-                    <img src="./img/phone.png" alt="phone">
-                    <span class="header-contact-text">8 (111) 222-33-44</span>
-                </a>
-            </li>
+        <div class="header-main-section">
+            <div class="half-width header-title">
+                <img class="header-img" src="./img/logo.svg" alt="logo">
+                <p class="header-title-text">BuhOne</p>
+            </div>
+            <div class="half-width">
+                <ul class="flex header-info">
+                    <li>
+                        <a class="header_contact-link" href="tel:81112223344">
+                            <img src="./img/phone.png" alt="phone">
+                            <span class="header-contact-text">8 (111) 222-33-44</span>
+                        </a>
+                    </li>
 
-            <li>
-                <img src="./img/clock.png" alt="clock">
-                <span class="header-contact-text">Пн-Пт 10:00-18:00</span>
-            </li>
+                    <li>
+                        <img src="./img/clock.png" alt="clock">
+                        <span class="header-contact-text">Пн-Пт 10:00-18:00</span>
+                    </li>
 
-            <li>
-                <a class="header_contact-link" href="mailto:order@buhone.ru">
-                    <img src="./img/mail.png" alt="mail">
-                    <span class="header-contact-text">order@buhone.ru</span>
-                </a>
-                
-            </li>
+                    <li>
+                        <a class="header_contact-link" href="mailto:order@buhone.ru">
+                            <img src="./img/mail.png" alt="mail">
+                            <span class="header-contact-text">order@buhone.ru</span>
+                        </a>
+                        
+                    </li>
 
-            <li>
-                <img src="./img/geo-mark.png" alt="geo-mark">
-                <span class="header-contact-text">Невский пр. 130</span>
-            </li>
-        </ul>
+                    <li>
+                        <img src="./img/geo-mark.png" alt="geo-mark">
+                        <span class="header-contact-text">Невский пр. 130</span>
+                    </li>
+                </ul>
 
-        <nav>
-            <ul>
-                <li>
-                    <a class="header-nav-link" href="#">Главная</a>
-                </li>
-                <li>
-                    <a class="header-nav-link" href="#">услуги</a>
-                </li>
-                <li>
-                    <a class="header-nav-link" href="#">кейсы</a>
-                </li>
-                <li>
-                    <a class="header-nav-link" href="#">о компании</a>
-                </li>
-                <li>
-                    <a class="header-nav-link" href="#">контакты</a>
-                </li>
-            </ul>  
-        </nav>
-
+                <nav>
+                    <ul class="flex header-info">
+                        <li>
+                            <a class="header-nav-link" href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a class="header-nav-link" href="#">услуги</a>
+                        </li>
+                        <li>
+                            <a class="header-nav-link" href="#">кейсы</a>
+                        </li>
+                        <li>
+                            <a class="header-nav-link" href="#">о компании</a>
+                        </li>
+                        <li>
+                            <a class="header-nav-link" href="#">контакты</a>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -148,8 +153,10 @@
 
         <section class="reviews container">
             <h2 class="section-title">Отзывы</h2>
-            <p class="section-subtitle">Ваши благодарности</p>
-            <button class="reviews-button" type="button">Оставить отзыв</button>
+            <div>
+                <p class="section-subtitle">Ваши благодарности</p>
+                <button class="reviews-button" type="button">Оставить отзыв</button>
+            </div>
             <ul>
                 <li class="reviews-item">
                     <blockquote class="reviews-item-blockquote">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </blockquote>
@@ -176,13 +183,17 @@
                     <p class="reviews-item-author-position">Директор ООО “Раз-два”</p>
                 </li>
             </ul>
-            <ul>
-                <li><button type="button" class="review-slider-button review-slider-button-active"></button></li>
-                <li><button type="button" class="review-slider-button "></button></li>
-                <li><button type="button" class="review-slider-button "></button></li>
-                <li><button type="button" class="review-slider-button "></button></li>
-                <button class="review-slider-arrow" type="button" disabled><img src="./img/arrow_left.svg" alt="arrow_left"></button>
-                <button class="review-slider-arrow review-slider-arrow-active" type="button"><img src="./img/arrow_right.svg" alt="arrow_right"></button>
+            <ul class="reviews-buttons">
+                <div class="flex reviews-buttons-1">
+                    <li><button type="button" class="review-slider-button review-slider-button-active"></button></li>
+                    <li><button type="button" class="review-slider-button "></button></li>
+                    <li><button type="button" class="review-slider-button "></button></li>
+                    <li><button type="button" class="review-slider-button "></button></li>
+                </div>
+                <div class="flex">
+                    <button class="review-slider-arrow" type="button" disabled><img src="./img/arrow_left.svg" alt="arrow_left"></button>
+                    <button class="review-slider-arrow review-slider-arrow-active" type="button"><img src="./img/arrow_right.svg" alt="arrow_right"></button>
+                </div>
             </ul>
         </section>
 
@@ -262,7 +273,50 @@
         </div>    
     </footer>
     
-    <div>popup</div>
+    <div class="popup">
+        <div class="popup-2">
+            <p class="popup-title">Оставить отзыв</p>
+            <div class="flex">
+                <label class="popup-input-label">
+                    <span class="popup-input-span block">Имя</span>
+                    <input type="text" class="popup-name popup-input" placeholder="Иван">
+                </label>
+                <label class="popup-input-label">
+                    <span class="popup-input-span block">Фамилия</span>
+                    <input type="text" class="popup-surname popup-input" placeholder="Иванов">
+                </label>
+            </div>
+
+            <div class="flex">
+                <label class="popup-input-label">
+                    <span class="popup-input-span block">Email</span>
+                    <input type="email" class="popup-email popup-input" placeholder="Email">
+                </label>
+
+                <label class="popup-radio-label">
+                    <span class="popup-radio-span-title block">Всё понравилось?</span>
+                    <label>
+                        <input type="radio" name="popup-radio" class="popup-radio">
+                        <span class="popup-radio-span">Да</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="popup-radio" class="popup-radio">
+                        <span class="popup-radio-span">Нет</span>
+                    </label>
+                </label>
+            </div>
+
+            <label class="popup-label-textarea">
+                <span class="popup-textarea-span block">Отзыв</span>
+                <textarea placeholder="Отзыв" class="popup-textarea"></textarea>
+            </label>
+            <div class="flex-button-div">
+                <button type="submit" class="popup-button">
+                    <p class="flex-button">Отправить-отзыв</p>
+                </button>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
