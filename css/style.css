@@ -67,10 +67,27 @@ body {
 .header-info {
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 0 15px;
+}
+
+.blue-icon {
+    fill: #005FA3;
 }
 
 .header_contact-link{
     text-decoration: none;
+}
+
+.header_contact-link:hover .header-contact-text {
+    color: #005FA3;
+}
+
+.header_contact-link:hover .blue-icon {
+    fill: #1588ca;
+}
+
+.header_contact-link:active {
+    opacity: 0.7;
 }
 
 .header-contact-text {
@@ -87,6 +104,14 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
+}
+
+.header-nav-link:hover {
+    color: #005FA3;
+}
+
+.header-nav-link:active {
+    opacity: 0.7;
 }
 
 .desc {
@@ -112,15 +137,37 @@ body {
     align-items: center;
 }
 
+.desc-link:hover,
+.desc-link:focus,
+.reviews-button:hover,
+.reviews-button:focus,
+.footer-button:hover,
+.footer-button:focus,
+.popup-button:hover,
+.popup-button:focus,
+.review-slider-arrow:hover,
+.review-slider-arrow:focus {
+    border: 1px solid white;
+    background-color: #1588ca;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.desc-link:active,
+.reviews-button:active,
+.footer-button:active,
+.popup-button:active,
+.review-slider-arrow:active {
+    opacity: 0.9;
+}
+
 .desc-title {
     color: #FFFFFF;
     font-family: "Merriweather";
     font-size: 48px;
     font-weight: 700;
     line-height: 66px;
-    margin: 0 0 131px;
-    
-
+    margin: 0 0 131px;  
 }
 
 .service {
@@ -162,6 +209,7 @@ body {
     font-weight: 900;
     line-height: 30px;
     padding: 261px 118px 45px 45px;
+    position: relative;
 }
 
 .service-item-title {
@@ -170,6 +218,26 @@ body {
     width: 350px;
     height: 360px;
     display: block;
+    position: relative;
+}
+
+.service-item-title::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background-color: #005FA3;
+    opacity: 0.65;
+    display: none;
+}
+
+.service-item-title:hover.service-item-title::before,
+.service-item-title:focus.service-item-title::before {
+    display: block;
+}
+
+.service-item-title:active.service-item-title {
+    opacity: 0.8;
 }
 
 .about {
@@ -221,6 +289,26 @@ body {
     width: 255px;
     height: 255px;
     margin: 164px 0 0 ;
+    position: relative;
+}
+
+.about-item::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #005FA3;
+    position: absolute;
+    display: none;
+}
+
+.about-item:hover.about-item::before {
+    display: block;
+}
+
+.about-item:hover .about-item-text-0,
+.about-item:hover .about-item-text-1,
+.about-item:hover .about-item-link {
+    color: white;
 }
 
 .about-item:nth-of-type(n+3) {
@@ -235,6 +323,7 @@ body {
     line-height: 66px;
     letter-spacing: 0.1em;
     padding: 30px 140px 30px 40px;
+    position: relative;
 }
 
 .about-item-text-1 {
@@ -243,6 +332,7 @@ body {
     line-height: 18px;
     font-weight: 700;
     padding: 0 108px 47px 40px;
+    position: relative;
 }
 
 .about-item-link {
@@ -251,6 +341,15 @@ body {
     line-height: 17px;
     font-weight: 700;
     padding: 0 148px 0px 40px;
+    position: relative;
+}
+
+.about-item:hover .about-item-link:hover {
+    color: rgb(132, 179, 201);
+}
+
+.about-item:hover .about-item-link:active {
+    opacity: 0.7;
 }
 
 .Our-partners {
@@ -279,6 +378,10 @@ body {
     min-height: 111px;
 }
 
+.our-partners-link:hover .our-partners-img {
+    opacity: 0.6;
+}
+
 .our-partners-item:nth-of-type(-n+4) {
     margin: 0 0 34px;
 }
@@ -286,6 +389,17 @@ body {
 .reviews {
     background-color: white;
     padding: 174px 0 120px;
+}
+
+.reviews-firs-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 80px;
+}
+
+.reviews-list {
+    margin: 0 0 50px;
 }
 
 .reviews-item {
@@ -322,6 +436,7 @@ body {
 .reviews-buttons {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .reviews-buttons-1 {
@@ -351,6 +466,10 @@ body {
     opacity: 0.4;
 }
 
+.review-slider-button:hover {
+    background-color: #005FA3;
+    cursor: pointer;
+}
 
 .review-slider-button-active {
     opacity: 1;
@@ -479,10 +598,17 @@ body {
     font-size: 21px;
     font-weight: 300;
     line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .envelope {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-item-mail-img {
@@ -490,11 +616,25 @@ body {
 }
 
 .footer-item-mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 21px;
     font-weight: 300;
     line-height: 29px;
+}
+
+.footer-item-mail:hover,
+.footer-item-phone:hover {
+    opacity: 0.7;
+}
+
+.footer-item-mail:active,
+.footer-item-phone:active {
+    opacity: 0.4;
 }
 
 .form-contact-wrp {
@@ -600,6 +740,20 @@ body {
     min-height: 636px;
     padding: 55px 95px 69px 95px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    opacity: 0.6;
 }
 
 .popup-title {
@@ -609,6 +763,9 @@ body {
     line-height: 69px;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .popup-input-label {
