@@ -382,6 +382,10 @@ body {
     opacity: 0.6;
 }
 
+.our-partners-link:active .our-partners-img {
+    opacity: 0.4;
+}
+
 .our-partners-item:nth-of-type(-n+4) {
     margin: 0 0 34px;
 }
@@ -422,8 +426,6 @@ body {
     color: #000;
     font-size: 18px;
     line-height: 25px;
-    
-
 }
 
 .reviews-item-author-position {
@@ -463,16 +465,11 @@ body {
     padding: 0;
     border: 0;
     border-radius: 50%;
-    opacity: 0.4;
 }
 
 .review-slider-button:hover {
     background-color: #005FA3;
     cursor: pointer;
-}
-
-.review-slider-button-active {
-    opacity: 1;
 }
 
 .review-slider-arrow {
@@ -481,11 +478,10 @@ body {
     background-color: #005FA3;
     padding: 0;
     border: 0;
-    opacity: 0.2;
 }
 
-.review-slider-arrow-active {
-    opacity: 1;
+.review-slider-arrow:nth-of-type(1) {
+    margin: 0 2px 0 0;
 }
 
 .our-advantages {
@@ -668,6 +664,10 @@ body {
     color: #FFF;
 }
 
+.input-label-input:focus-visible {
+    outline: none;
+}
+
 .input-label-input::placeholder {
     color:#BDBDBD;
 }
@@ -686,6 +686,10 @@ body {
     font-size: 21px;
     line-height: 29px;
     color: #FFF;
+}
+
+.input-label-textarea:focus-visible {
+    outline: none;
 }
 
 .input-label-textarea::placeholder {
@@ -750,6 +754,7 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0px;
 }
 
 .popup-close:hover {
@@ -789,11 +794,16 @@ body {
     background-color: transparent;
     width: 255px;
     color: white;
+    font-size: 18px;
+}
+
+.popup-input:focus-visible {
+    outline: none;
 }
 
 .popup-input::placeholder {
-    font-size: 19px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 16px;
     color: #BDBDBD;
 }
 
@@ -836,12 +846,18 @@ body {
     min-height: 136px;
     resize: none;
     color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.popup-textarea:focus-visible {
+    outline: none;
 }
 
 .popup-textarea::placeholder {
     font-size: 21px;
     font-weight: 300;
-    line-height: 29px;
+    line-height: 21px;
     color: #BDBDBD;
 }
 
